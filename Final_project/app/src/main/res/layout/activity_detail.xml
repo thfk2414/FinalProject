@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".view.home.HomeActivity">
+
+
+    <include layout="@layout/header" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hansuwon_r"
+                android:gravity="center"
+                android:text=" 피부 색 진단"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/hansuwon_r"
+                android:gravity="center"
+                android:text="자신의 피부색과 톤을 알아 볼 수 있으며,"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/hansuwon_r"
+                android:gravity="center"
+                android:text="파운데이션 구매 시 참고할 수 있습니다."
+                android:textSize="15dp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/detail_person1" />
+
+            <TextView
+                android:id="@+id/skin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="피부 색 진단 하러가기 go →" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/hansuwon_r"
+                android:gravity="center"
+                android:text=" 어울리는 색 진단"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/hansuwon_r"
+                android:gravity="center"
+                android:text="자신에게 어울리는 personal color를 찾을 수 있습니다."
+                android:textSize="15dp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/detail_person" />
+
+            <TextView
+                android:id="@+id/personalColor"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="나의 personal color 진단 하러가기 go →" />
+
+        </LinearLayout>
+
+
+        <include layout="@layout/footer" />
+
+    </RelativeLayout>
+
+</LinearLayout>

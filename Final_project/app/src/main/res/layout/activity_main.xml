@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".view.login.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/angmuburi"
+        android:gravity="center_vertical|center"
+        android:text="ACHOO"
+        android:textColor="#fc8d8b"
+        android:textSize="56dp" />
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/main_login"
+        android:drawableLeft="@drawable/user_icon"
+        android:hint="ID를 입력하세요" />
+
+    <EditText
+        android:id="@+id/editText_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/main_login"
+        android:drawableLeft="@drawable/lock"
+        android:hint="PASSWORD를 입력하세요"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:background="#fc8d8b"
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/joinus_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="40dp"
+        android:background="#fc8d8b"
+        android:text="회원가입"
+        android:textColor="#ffffff"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="OR"
+        android:textColor="#fc8d8b"
+        android:textSize="25dp" />
+
+
+    <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+        android:id="@+id/buttonNaverLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="10dp" />
+
+    <ImageButton
+        android:id="@+id/custom_kakao_login"
+        android:layout_gravity="center"
+        android:padding="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kakao_login" />
+
+    <com.kakao.usermgmt.LoginButton
+
+        android:id="@+id/buttonKakaoLogin"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
